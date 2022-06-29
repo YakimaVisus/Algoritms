@@ -1,0 +1,466 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  max-width: 100%;
+  min-height: 100%;
+
+  font-family: "Inter-Regular", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+li {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0.67em 0;
+  line-height: 1.2;
+}
+
+.btn {
+  padding: 0.8rem 2.5rem;
+  border: 0;
+  background-color: transparent;
+  color: var(--dark);
+  border-radius: 10px;
+
+  font-family: "Inter-Medium";
+  font-size: 1.3rem;
+
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: #fdca40;
+  color: var(--dark);
+}
+
+.btn-outline {
+  padding: 0.5rem 1.5rem;
+  border: 1px solid #eee;
+  background: transparent;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.btn-outline:focus {
+  border: 1px solid #015fff;
+}
+
+.btn-primary:active {
+  background-color: var(--gray);
+}
+
+.img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo:hover {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1140px;
+  min-height: 100%;
+  margin: 0 auto;
+}
+
+.header {
+  padding: 30px 10px 10px;
+  margin-bottom: 100px;
+
+  font-family: "Inter-Bold", sans-serif;
+}
+
+.header a {
+  color: var(--dark);
+}
+
+.navbar {
+  margin-bottom: 70px;
+}
+
+.nav-list {
+  display: flex;
+}
+
+.nav-list:nth-child(2) {
+  margin-left: -300px;
+}
+
+.nav-item:not(:first-child) {
+  margin-left: 20px;
+}
+
+.header-lead-main {
+  display: flex;
+  align-items: center;
+  background: #015fff;
+  height: 500px;
+  border-radius: 12px;
+  padding: 30px 50px;
+}
+
+.header-le-desc {
+  display: flex;
+  align-items: center;
+  background: #015fff;
+  height: 500px;
+  border-radius: 12px;
+  padding: 30px 50px;
+}
+
+.header-lead-title {
+  font-family: "Inter-Bold", sans-serif;
+  font-size: 2.5rem;
+  color: #f7f8fa;
+}
+
+.header-lead-subtitle {
+  font-size: 1.22rem;
+
+  margin-bottom: 3em;
+  color: #f7f8fa;
+  font-family: "Inter-Regular", sans-serif;
+}
+
+.catalog {
+  margin-bottom: 20px;
+}
+
+.catalog-heading {
+  margin-bottom: 20px;
+}
+
+.catalog-title {
+  font-size: 42px;
+  font-family: "Inter-Bold";
+}
+
+.catalog-link {
+  font-family: "Inter-Bold", sans-serif;
+  color: #181818;
+  display: flex;
+  align-items: center;
+}
+
+.catalog-link img {
+  margin-left: 10px;
+}
+
+.catalog-cards {
+  flex-wrap: wrap;
+}
+
+.catalog-card {
+  display: flex;
+  flex-flow: column wrap;
+  position: relative;
+}
+
+.card-desc {
+  position: absolute;
+  background-color: #f7f8fa;
+  padding: 5px 20px;
+  width: 90%;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 15px;
+  border-radius: 12px;
+}
+
+.catalog-product-individual {
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+  min-height: 545px;
+  background-repeat: no-repeat;
+  background-image: url(../img/8.jpg);
+  background-position: center;
+}
+
+.catalog-product-desc {
+  padding: 30px 50px;
+  max-width: 60%;
+}
+
+.catalog-product-title {
+  margin: 0;
+
+  font-size: 2.5rem;
+  color: #f7f8fa;
+}
+
+.catalog-product-subtitle {
+  margin-bottom: 3em;
+  color: #f7f8fa;
+  font-size: 1.22rem;
+  font-family: "Inter-Regular", sans-serif;
+}
+
+.product-card {
+  margin-bottom: 60px;
+}
+
+.product-card-main {
+  display: flex;
+}
+
+.product-card-text {
+  margin-left: 30px;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+}
+
+.product-card-images img {
+  width: 200%;
+}
+
+.product-card-title {
+  font-family: 'Inter-Bold';
+  font-size: 2.5rem;
+
+  margin: 0;
+}
+
+.product-card-subtitle {
+  max-width: 75%;
+}
+
+.rate {
+  display: flex;
+}
+
+.rate .stars {
+  margin-right: 20px;
+}
+
+.rate span + a {
+  margin-left: 20px;
+}
+
+.selects {
+  margin-bottom: 20px;
+}
+
+.selects-main .btn-outline {
+  margin-right: 10px;
+}
+
+.selects-main p {
+  margin-bottom: 10px;
+}
+
+.select-buttons {
+  display: flex;
+  align-items: center;
+}
+
+.product-info-subtext small {
+  color: #999;
+}
+
+.product-info-card {
+  border: 1px solid #eee;
+  border-radius: 6px;
+  padding: 20px;
+  width: 50%;
+}
+
+.product-info-card:first-child {
+  margin-right: 20px;
+}
+
+.product-card-desc {
+  margin-top: 40px;
+}
+
+.product-card-desc img {
+  margin-right: 20px
+}
+
+.product-text-list {
+  display: flex;
+}
+
+.product-text-item {
+  margin-right: 20px;
+  padding: 5px 10px;
+  border-radius: 6px;
+}
+
+.product-text-item:first-child {
+  color: #015fff;
+  background-color: #015eff28;
+}
+
+.product-advantage {
+  list-style: disc;
+}
+
+.product-card-images {
+  display: flex;
+}
+
+.product-text-menu,
+.product-desc-subtitle,
+.product-desc-advantages {
+  margin-bottom: 20px;
+}
+
+.product-price {
+  font-family: "Inter-Bold", sans-serif;
+  font-size: 1.5rem;
+}
+
+.advantages-company {
+  padding: 100px 150px;
+  margin-bottom: 60px;
+  background-color: #015fff;
+  border-radius: 32px;
+
+  text-align: center;
+  color: #f7f8fa;
+}
+
+.company-title {
+  font-size: 2rem;
+}
+
+.about {
+  margin-bottom: 100px;
+}
+
+.about-title {
+  font-size: 2.5rem;
+}
+
+.center p {
+  margin-right: 30px;
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+}
+
+.advantages-item {
+  display: flex;
+  text-align: center;
+  flex-flow: column wrap;
+}
+
+.advantages-item img {
+  margin-bottom: 15px;
+}
+
+.form {
+  margin-bottom: 100px;
+  padding: 70px 150px;
+  border-radius: 32px;
+  background-color: #eeeeff;
+
+  text-align: center;
+}
+
+.form-title {
+  font-size: 2rem;
+  margin: 0 auto 50px;
+}
+
+.form-subtitle {
+  max-width: 50%;
+  margin: 0 auto 50px;
+}
+
+.form-control {
+  margin: 0 auto 50px;
+}
+
+.form-label {
+  font-family: 'Inter-Bold', sans-serif;
+  margin-left: -350px;
+  margin-bottom: 10px;
+}
+
+.form-input {
+  width: 50%; height: 60px;
+  padding: 0 20px;
+  border: 1px solid #999;
+  border-radius: 6px;
+  background-color: transparent;
+  
+  color: #181818;
+  font-size: inherit;
+  font-family: inherit;
+}
+
+.form-label {
+  display: block;
+}
+
+.row {
+  display: flex;
+}
+
+.row-center {
+  justify-content: center;
+}
+
+.row div {
+  margin-right: 15px;
+}
+
+.small-control {
+  max-width: 50%;
+  margin: 0 auto 50px;
+  text-align: justify;
+}
+
+.footer {
+  margin-bottom: 20px;
+}
+
+.footer-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-item ul {
+  display: flex;
+}
+
+.footer-item li {
+  margin-left: 20px;
+}
+
+.footer-link {
+  color: var(--dark);
+  text-decoration: underline;
+}
